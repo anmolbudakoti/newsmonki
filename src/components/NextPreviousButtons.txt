@@ -1,0 +1,64 @@
+ // handleNext = async ()=>{
+  // //   if(this.state.page + 1 > Math.ceil(this.state.totalArticles/props.pageSize)){
+
+  // //   }
+  // //   else{
+  // //   let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&pageSize=${props.pageSize}&page=${this.state.page + 1}`;
+  // //   this.setState({loading: true});
+  // //   let data = await fetch(url);
+  // //   let parsedData = await data.json();
+  // //   this.setState({
+  // //     page: this.state.page+1,
+  // //     articles: parsedData.articles,
+  // //     loading: false
+  // //   })
+  // // }
+
+  //         // (OR)
+  //   this.setState({page: this.state.page + 1})
+  //   this.updateNews()
+  // }
+
+
+// Function based
+
+/*   const handleNext = async ()=>{
+  setPage(page+1)
+  updateNews()
+  } 
+
+
+  // handlePrevious = async ()=>{
+  //   // let url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&pageSize=${props.pageSize}&page=${this.state.page - 1}`;
+  //   // this.setState({loading: true});
+  //   // let data = await fetch(url);
+  //   // let parsedData = await data.json();    
+  //   // this.setState({
+  //   //   page: this.state.page-1,
+  //   //   articles: parsedData.articles,
+  //   //   loading: false
+  //   // })
+
+  //           // (OR)
+  //   this.setState({page: this.state.page - 1})
+  //   this.updateNews()
+  // }
+
+
+// Function based
+
+ const handlePrevious = async ()=>{
+ setPage(page-1)
+ updateNews()
+}
+
+
+
+
+
+ {/* For Adding Previous or Next Button Functionality */}
+
+        {/* <div className="container m-3 d-flex justify-content-between">
+              <button disabled={this.state.page<=1} className="btn btn-primary" type="button" onClick={this.handlePrevious}>&larr; Previous</button>
+              <button disabled={this.state.page + 1 > Math.ceil(this.state.totalArticles/props.pageSize)} className="btn btn-primary" type="button" onClick={this.handleNext}>Next &rarr;</button>
+            </div> */}
