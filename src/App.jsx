@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <>
-      <Router>
+      <Router basename="/newsmonki">
         <LoadingBar
           color='#f11946'
           progress={progress}
